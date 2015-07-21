@@ -1,0 +1,6 @@
+echo "/*!"
+echo " * $npm_package_name v$npm_package_version"
+echo " * Copyright (c) 2015 Open Counter Enterprises, Inc."
+echo " * This software is free to use under the MIT license."
+echo " * See https://github.com/opencounter/$npm_package_name/blob/master/LICENSE"
+echo " */"
