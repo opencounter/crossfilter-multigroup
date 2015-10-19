@@ -2,12 +2,13 @@
   "name": "crossfilter-multigroup",
   "version": "0.5.0",
   "description": "A specialized Crossfilter group for handling dimensions that are lists",
-  "main": "crossfilter-multigroup.js",
+  "main": "dist/crossfilter-multigroup.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "build": "npm install && babel --modules umd $npm_package_main --out-file dist/$npm_package_name.js && uglifyjs --compress --preamble \"`./banner.sh`\" -- dist/$npm_package_name.js > dist/$npm_package_name.min.js",
+    "build": "echo \"`./banner.sh`\\n`babel --modules umd $npm_package_main`\" > dist/$npm_package_name.js && uglifyjs --compress --comments '/license/i' -- dist/$npm_package_name.js > dist/$npm_package_name.min.js",
+    "prepublish": "npm run build",
     "test": "mocha --compilers js:babel/register"
   },
   "keywords": [

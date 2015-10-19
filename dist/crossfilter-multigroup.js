@@ -1,3 +1,9 @@
+/*!
+ * crossfilter-multigroup v0.5.0
+ * Copyright (c) 2015 Open Counter Enterprises, Inc.
+ * This software is free to use under the MIT license.
+ * See https://github.com/opencounter/crossfilter-multigroup/blob/master/LICENSE
+ */
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(["exports", "module"], factory);
